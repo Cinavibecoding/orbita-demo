@@ -43,7 +43,7 @@ export type Dimension = {
 export const dimensions: Dimension[] = [
   {
     key: "S",
-    name: "Ecosistema sostenible",
+    name: "Huella Verde",
     short: "Compromiso social y cultura a largo plazo",
     max: 750,
     weight: 8,
@@ -117,7 +117,7 @@ export const dimensions: Dimension[] = [
   },
   {
     key: "M",
-    name: "Sinergia móvil",
+    name: "Pulso Colectivo",
     short: "Liderazgo distribuido y conexión digital",
     max: 1250,
     weight: 14,
@@ -171,7 +171,7 @@ export const dimensions: Dimension[] = [
   },
   {
     key: "A",
-    name: "Aceleración ágil",
+    name: "Chispa Creativa",
     short: "Innovación y colaboración sin silos",
     max: 3100,
     weight: 33,
@@ -245,7 +245,7 @@ export const dimensions: Dimension[] = [
   },
   {
     key: "R",
-    name: "Retorno de valor",
+    name: "Motor de Resultados",
     short: "Resultados medibles y eficiencia operativa",
     max: 2700,
     weight: 29,
@@ -299,7 +299,7 @@ export const dimensions: Dimension[] = [
   },
   {
     key: "T",
-    name: "Tecnología evolutiva",
+    name: "Frontera Digital",
     short: "Gestión del conocimiento y dominio de nuevas herramientas",
     max: 1500,
     weight: 16,
