@@ -7,7 +7,7 @@ import {
   type NudoAction,
 } from "./nudos-data";
 
-const STORAGE_KEY = "nudos-smart-state-v1";
+const STORAGE_KEY = "orbita-demo-state-v2";
 
 type StoredState = {
   actions: NudoAction[];
