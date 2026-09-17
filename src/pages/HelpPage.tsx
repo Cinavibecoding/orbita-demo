@@ -112,7 +112,7 @@ export function HelpPage() {
         </div>
       </div>
 
-      {/* PO+ */}
+      {/* MP+ */}
       <div className="mx-auto mt-20 max-w-3xl rounded-3xl bg-navy p-8 text-primary-foreground shadow-elevated">
         <span className="inline-flex items-center gap-2 rounded-full bg-primary-foreground/10 px-3 py-1 text-xs font-extrabold uppercase tracking-[0.2em] text-cyan">
           <Sparkles className="h-4 w-4" /> Categoría extraordinaria

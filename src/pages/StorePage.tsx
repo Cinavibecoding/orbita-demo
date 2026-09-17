@@ -15,7 +15,7 @@ export function StorePage() {
   return (
     <PageWrap
       eyebrow="Tienda de Premios"
-      title="Convierte tus puntos en experiencias."
+      title="Cambia tus billetes por experiencias."
       intro="Catálogo demostrativo para visualizar la mecánica de canje semestral del programa."
     >
       <div className="mb-8 flex flex-wrap items-center gap-2">
@@ -33,7 +33,7 @@ export function StorePage() {
           </button>
         ))}
         <span className="ml-auto rounded-full bg-cyan/20 px-4 py-2 text-sm font-extrabold text-ocean">
-          Saldo: {fmt(availablePoints)} PO
+          Saldo: {fmt(availablePoints)} MP
         </span>
       </div>
 
@@ -57,7 +57,7 @@ export function StorePage() {
                 <p className="mt-2 flex-1 text-sm leading-6 text-muted-foreground">
                   {r.description}
                 </p>
-                <p className="mt-5 text-2xl font-extrabold text-ocean">{fmt(r.cost)} PO</p>
+                <p className="mt-5 text-2xl font-extrabold text-ocean">{fmt(r.cost)} MP</p>
                 <Button
                   variant={affordable ? "brand" : "secondary"}
                   className="mt-5 w-full rounded-full"
@@ -82,7 +82,7 @@ export function StorePage() {
               <li key={r.id} className="flex items-center justify-between py-3">
                 <span className="font-bold">{r.name}</span>
                 <span className="text-sm text-muted-foreground">
-                  {r.date} · −{fmt(r.cost)} PO
+                  {r.date} · −{fmt(r.cost)} MP
                 </span>
               </li>
             ))}

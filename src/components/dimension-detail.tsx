@@ -113,7 +113,7 @@ export function DimensionDetail({
 
           <div className="mt-6 flex items-center justify-between rounded-2xl bg-secondary p-5">
             <b>Tope semestral de la dimensión</b>
-            <b className="text-xl text-ocean">{fmt(dimension.max)} PO</b>
+            <b className="text-xl text-ocean">{fmt(dimension.max)} MP</b>
           </div>
 
           <div className="mt-6 space-y-4">

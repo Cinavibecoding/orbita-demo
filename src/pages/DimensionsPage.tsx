@@ -52,7 +52,7 @@ export function DimensionsPage({
                   </div>
                   <div>
                     <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-muted-foreground">
-                      Dimensión {d.key} · {d.weight}% · {fmt(d.max)} PO
+                      Dimensión {d.key} · {d.weight}% · {fmt(d.max)} MP
                     </p>
                     <h2 className="mt-1 text-2xl font-extrabold">
                       {d.name}

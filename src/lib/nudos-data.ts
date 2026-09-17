@@ -10,13 +10,13 @@ import {
   type LucideIcon,
 } from "lucide-react";
 
-export type DimensionKey = "S" | "M" | "A" | "R" | "T";
+export type DimensionKey = "H" | "P" | "C" | "M" | "T";
 
 export type Subdimension = {
   name: string;
   /** Qué mide o premia esta subdimensión. */
   description: string;
-  /** Regla de puntuación oficial (PO por actividad, tramos, o mecánica de ranking). */
+  /** Regla de puntuación oficial (MP por actividad, tramos, o mecánica de ranking). */
   rule: string;
   /** Acciones referenciales para sumar puntos en esta subdimensión. */
   actions: string[];
@@ -42,10 +42,10 @@ export type Dimension = {
  */
 export const dimensions: Dimension[] = [
   {
-    key: "S",
+    key: "H",
     name: "Huella Verde",
     short: "Compromiso social y cultura a largo plazo",
-    max: 750,
+    max: 75,
     weight: 8,
     gradient: "var(--gradient-cyan)",
     accentClass: "text-cyan",
@@ -57,7 +57,7 @@ export const dimensions: Dimension[] = [
         name: "Voluntariado",
         description:
           "Acciones altruistas donde el empleado dona su tiempo y talento para causas sociales avaladas por la organización. Representa la \"cara humana\" de la estrategia.",
-        rule: "250 PO por actividad · 1 actividad máx. por acción",
+        rule: "25 MP por actividad · 1 actividad máx. por acción",
         actions: [
           "Participar en jornadas y proyectos sociales de impacto, internos y externos, certificados por Responsabilidad Social.",
           "Ser mentor o tutor voluntario en programas de educación financiera para la comunidad.",
@@ -77,7 +77,7 @@ export const dimensions: Dimension[] = [
         name: "Impacto responsable",
         description:
           "Es la alineación con los valores de inclusión, diversidad y sostenibilidad ambiental. Premia la participación en actividades que buscan dejar un legado positivo en el entorno.",
-        rule: "250 PO por actividad · 1 actividad máx. por acción",
+        rule: "25 MP por actividad · 1 actividad máx. por acción",
         actions: [
           "Participar como promotor de las acciones de la Impacto Responsable.",
           "Obtener certificaciones en sostenibilidad, finanzas sostenibles o impacto responsable.",
@@ -97,7 +97,7 @@ export const dimensions: Dimension[] = [
         name: "Bienestar integral",
         description:
           "Acciones que promuevan la salud física, mental y el balance vida-trabajo. Premiamos el autocuidado y la resiliencia como pilares de la sostenibilidad organizacional.",
-        rule: "250 PO por actividad · 1 actividad máx. por acción",
+        rule: "25 MP por actividad · 1 actividad máx. por acción",
         actions: [
           "Participar en programas de salud preventiva o retos de actividad física certificados.",
           "Asistir a talleres, cursos o diplomados de gestión del estrés, salud mental o bienestar.",
@@ -116,10 +116,10 @@ export const dimensions: Dimension[] = [
     ],
   },
   {
-    key: "M",
+    key: "P",
     name: "Pulso Colectivo",
     short: "Liderazgo distribuido y conexión digital",
-    max: 1250,
+    max: 125,
     weight: 14,
     gradient: "var(--gradient-sky)",
     accentClass: "text-sky",
@@ -131,7 +131,7 @@ export const dimensions: Dimension[] = [
         name: "Identidad y legado",
         description:
           "Reconoce el compromiso del colaborador con el propósito, la historia y la evolución de la marca. Premia el conocimiento de los hitos que nos trajeron hasta aquí y la capacidad de proyectar nuestra esencia en el entorno digital actual.",
-        rule: "250 PO por actividad · 1 actividad máx. por acción",
+        rule: "25 MP por actividad · 1 actividad máx. por acción",
         actions: [
           "Completar la certificación \"Cultura y Propósito\" y mantenerla vigente.",
           "Participar en actividades de Storytelling del Legado compartiendo la historia de la marca.",
@@ -170,10 +170,10 @@ export const dimensions: Dimension[] = [
     ],
   },
   {
-    key: "A",
+    key: "C",
     name: "Chispa Creativa",
     short: "Innovación y colaboración sin silos",
-    max: 3100,
+    max: 310,
     weight: 33,
     gradient: "var(--gradient-violet)",
     accentClass: "text-violet",
@@ -185,7 +185,7 @@ export const dimensions: Dimension[] = [
         name: "Construcción del conocimiento y co-creación",
         description:
           "Rompe los \"silos\" departamentales. Premia a quienes trabajan en equipos multidisciplinarios para alcanzar un objetivo común.",
-        rule: "500 PO por actividad · 2 actividades máx. por acción",
+        rule: "50 MP por actividad · 2 actividades máx. por acción",
         actions: [
           "Participar en células de aprendizaje cruzado con otras áreas.",
           "Sumarse a espacios de co-diseño y co-creación de soluciones.",
@@ -205,7 +205,7 @@ export const dimensions: Dimension[] = [
         name: "Innovación",
         description:
           "Es el espacio para el pensamiento disruptivo. Reconoce a quienes proponen soluciones creativas y aplicables — incluye el ranking de LabInnova (1°, 2° y 3° lugar).",
-        rule: "500 PO por actividad · 2 actividades máx. por acción",
+        rule: "50 MP por actividad · 2 actividades máx. por acción",
         actions: [
           "Presentar iniciativas innovadoras aplicables al negocio.",
           "Participar en LabInnova con propuestas de solución.",
@@ -225,7 +225,7 @@ export const dimensions: Dimension[] = [
         name: "Gestión del conocimiento",
         description:
           "Premia el proceso de documentar y transferir el saber crítico para que la organización no dependa de personas, sino de procesos inteligentes.",
-        rule: "500 PO por actividad · 2 actividades máx. por acción",
+        rule: "50 MP por actividad · 2 actividades máx. por acción",
         actions: [
           "Ejercer tutoría y facilitación de temas especializados.",
           "Brindar mentoría a otros colaboradores.",
@@ -244,10 +244,10 @@ export const dimensions: Dimension[] = [
     ],
   },
   {
-    key: "R",
+    key: "M",
     name: "Motor de Resultados",
     short: "Resultados medibles y eficiencia operativa",
-    max: 2700,
+    max: 270,
     weight: 29,
     gradient: "var(--gradient-magenta)",
     accentClass: "text-magenta",
@@ -259,7 +259,7 @@ export const dimensions: Dimension[] = [
         name: "Evaluación de Desempeño (EDR)",
         description:
           "Es el indicador formal del cumplimiento de metas individuales alineadas a los objetivos de la organización. Es la base del compromiso profesional.",
-        rule: "Se asignan PO desde 80% de EDR: 100%-120% = 1.200 PO · 90%-99% = 700 PO · 80%-89% = 400 PO",
+        rule: "Se asignan MP desde 80% de EDR: 100%-120% = 120 MP · 90%-99% = 70 MP · 80%-89% = 40 MP",
         actions: [
           "Cumplir o superar las metas individuales definidas en el EDR.",
           "Alcanzar una puntuación de EDR igual o superior al 80%.",
@@ -279,7 +279,7 @@ export const dimensions: Dimension[] = [
         name: "Crecimiento y lealtad",
         description:
           "Convertir a cada empleado en un embajador de marca capaz de atraer y retener clientes mediante la excelencia en el servicio y el uso de herramientas digitales.",
-        rule: "Por ranking de captación: 1° lugar = 1.500 PO · 2° lugar = 1.000 PO · 3° lugar = 600 PO",
+        rule: "Por ranking de captación: 1° lugar = 150 MP · 2° lugar = 100 MP · 3° lugar = 60 MP",
         actions: [
           "Participar en el programa de referidos para la captación de clientes.",
           "Vincular nuevos clientes naturales (Sede Central).",
@@ -301,7 +301,7 @@ export const dimensions: Dimension[] = [
     key: "T",
     name: "Frontera Digital",
     short: "Gestión del conocimiento y dominio de nuevas herramientas",
-    max: 1500,
+    max: 150,
     weight: 16,
     gradient: "var(--gradient-ocean)",
     accentClass: "text-sky",
@@ -313,7 +313,7 @@ export const dimensions: Dimension[] = [
         name: "Champions IA",
         description:
           "Empoderar a referentes digitales que transformen la gestión con IA acelerando la adopción tecnológica global.",
-        rule: "500 PO por actividad · 1 actividad máx. por acción",
+        rule: "50 MP por actividad · 1 actividad máx. por acción",
         actions: [
           "Participar en la optimización de procesos con IA.",
           "Sumarse a células de transferencia sobre una herramienta de IA específica.",
@@ -333,7 +333,7 @@ export const dimensions: Dimension[] = [
         name: "Blindaje y conocimiento técnico especializado",
         description:
           "Garantizar la actualización en habilidades técnicas críticas y competencias de ciberseguridad, transformando el conocimiento en un activo de protección organizacional.",
-        rule: "500 PO por actividad · 1 actividad máx. por acción",
+        rule: "50 MP por actividad · 1 actividad máx. por acción",
         actions: [
           "Obtener certificaciones externas en tu especialidad técnica.",
           "Aprobar rutas de aprendizaje internas (Campus Virtual).",
@@ -353,7 +353,7 @@ export const dimensions: Dimension[] = [
         name: "Experiencias gamificadas",
         description:
           "Fomenta el aprendizaje a través del juego y la interactividad, reconociendo que un colaborador motivado aprende de manera más efectiva y rápida.",
-        rule: "500 PO por actividad · 1 actividad máx. por acción",
+        rule: "50 MP por actividad · 1 actividad máx. por acción",
         actions: [
           "Completar los retos diseñados en el Campus Virtual.",
           "Aportar feedback para mejorar las experiencias gamificadas.",
@@ -403,43 +403,43 @@ export const initialActions: NudoAction[] = [
     id: 1,
     title: "Célula de transferencia de IA",
     dim: "T",
-    points: 500,
+    points: 50,
     status: "Aprobada",
-    date: "18 jul 2026",
+    date: "18 jul 2029",
   },
   {
     id: 2,
     title: "Mentoría interdepartamental",
-    dim: "A",
-    points: 500,
+    dim: "C",
+    points: 50,
     status: "Aprobada",
-    date: "24 jul 2026",
+    date: "24 jul 2029",
   },
   {
     id: 3,
     title: "Jornada de voluntariado",
-    dim: "S",
-    points: 250,
+    dim: "H",
+    points: 25,
     status: "En revisión",
-    date: "02 ago 2026",
+    date: "02 ago 2029",
   },
   {
     id: 4,
     title: "Storytelling del legado",
-    dim: "M",
-    points: 250,
+    dim: "P",
+    points: 25,
     status: "Aprobada",
-    date: "04 ago 2026",
+    date: "04 ago 2029",
   },
 ];
 
 export const ranking: { name: string; points: number }[] = [
-  { name: "Explorador Alfa", points: 8920 },
-  { name: "Explorador Bravo", points: 8450 },
-  { name: "Explorador Coral", points: 8110 },
-  { name: "Explorador Delta", points: 7890 },
-  { name: "Explorador Eco", points: 7620 },
-  { name: "Explorador Faro", points: 7340 },
+  { name: "Explorador Alfa", points: 892 },
+  { name: "Explorador Bravo", points: 845 },
+  { name: "Explorador Coral", points: 811 },
+  { name: "Explorador Delta", points: 789 },
+  { name: "Explorador Eco", points: 762 },
+  { name: "Explorador Faro", points: 734 },
 ];
 
 export type Reward = {
@@ -455,7 +455,7 @@ export const rewards: Reward[] = [
   {
     name: "Ruta de aprendizaje",
     category: "Aprendizaje",
-    cost: 900,
+    cost: 90,
     icon: BookOpen,
     gradient: "var(--gradient-cyan)",
     description: "Certificación o programa formativo alineado a tu plan de carrera.",
@@ -463,7 +463,7 @@ export const rewards: Reward[] = [
   {
     name: "Experiencia cultural",
     category: "Experiencias",
-    cost: 1300,
+    cost: 130,
     icon: Sparkles,
     gradient: "var(--gradient-violet)",
     description: "Encuentros, conciertos y actividades del ecosistema cultural aliado.",
@@ -471,7 +471,7 @@ export const rewards: Reward[] = [
   {
     name: "Beneficio bienestar",
     category: "Bienestar",
-    cost: 750,
+    cost: 75,
     icon: Star,
     gradient: "var(--gradient-ocean)",
     description: "Sesiones de salud integral, deporte o descanso adicional.",
@@ -479,7 +479,7 @@ export const rewards: Reward[] = [
   {
     name: "Aporte de impacto",
     category: "Sostenibilidad",
-    cost: 500,
+    cost: 50,
     icon: Leaf,
     gradient: "var(--gradient-magenta)",
     description: "Dona tus puntos a una causa social apoyada por la organización.",
@@ -489,10 +489,10 @@ export const rewards: Reward[] = [
 export const faqs: { q: string; a: string }[] = [
   {
     q: "¿Cuándo comienza la acumulación?",
-    a: "En julio de 2026, sin retroactividad.",
+    a: "En julio de 2029, sin retroactividad.",
   },
   {
-    q: "¿Qué son los PO+?",
+    q: "¿Qué son los MP+?",
     a: "Una categoría extraordinaria para desempeño fuera de serie, contingencias críticas o proyectos de alto impacto no tabulados.",
   },
   {
@@ -507,25 +507,25 @@ export const faqs: { q: string; a: string }[] = [
 
 /** Slide 20-21 del programa: categoría extraordinaria fuera de las 5 dimensiones. */
 export const nsPlus = {
-  name: "PO+ · Órbita Plus",
+  name: "MP+ · Órbita Plus",
   description:
-    "Se integran como una categoría extraordinaria para premiar el desempeño fuera de serie, la resolución de contingencias críticas o la gestión de proyectos de alto impacto que surgen de forma imprevista.",
+    "Una categoría aparte para reconocer momentos que se salen de lo previsto: un desempeño excepcional, una emergencia bien resuelta, o un proyecto de alto impacto que nadie vio venir.",
   purpose:
-    "Su objetivo es garantizar que la excelencia espontánea y el compromiso tengan un lugar inmediato en el ecosistema de valor de la organización.",
+    "Busca que ese tipo de esfuerzo tenga un espacio inmediato de reconocimiento, sin esperar al próximo corte semestral.",
   conditions: [
     {
       title: "Criterio de excepcionalidad",
       detail:
-        "Solo para acciones que no encajen en las 5 dimensiones, o que superen por mucho el tope de una de ellas debido a una crisis o emergencia.",
+        "Aplica solo a lo que no encaja en ninguna de las 5 dimensiones, o que supera muy por encima el tope de alguna por una situación fuera de lo normal.",
     },
     {
       title: "Aprobación cruzada",
       detail:
-        "Propuesto por el líder de área y avalado por el Comité de Innovación, asegurando la equidad institucional.",
+        "Debe proponerlo el líder del área y aprobarlo un comité interno, para mantener el criterio parejo entre equipos.",
     },
     {
       title: "Frecuencia",
-      detail: "Máximo una asignación por semestre por colaborador.",
+      detail: "Máximo una vez por semestre por persona.",
     },
   ],
 };
@@ -553,17 +553,17 @@ export const nivelacion: { question: string; ifYes: "suma" | "no-suma"; note: st
 export const reglasDelJuego: { title: string; detail: string }[] = [
   {
     title: "Sin retroactividad",
-    detail: "Se iniciará el conteo y la acumulación de PO en el mes de julio 2026, sin retroactividad.",
+    detail: "Se iniciará el conteo y la acumulación de MP en el mes de julio 2029, sin retroactividad.",
   },
   {
     title: "Cortes semestrales",
     detail:
-      "Se harán cortes semestrales de PO y reportes de ranking. Cada semestre se reinicia, desde cero, la acumulación de PO.",
+      "Se harán cortes semestrales de MP y reportes de ranking. Cada semestre se reinicia, desde cero, la acumulación de MP.",
   },
   {
     title: "Primera premiación",
     detail:
-      "En el mes de julio 2027 se hará la primera premiación de acuerdo al ranking de lo acumulado, así como al finalizar el Plan Estratégico.",
+      "En el mes de julio 2030 se hará la primera premiación de acuerdo al ranking de lo acumulado, así como al finalizar el Plan Estratégico.",
   },
   {
     title: "Exclusiones",
@@ -575,20 +575,20 @@ export const reglasDelJuego: { title: string; detail: string }[] = [
 /** Slide 26: hitos de comunicación 2026. */
 export const cronograma2026: { periodo: string; titulo: string; detalle: string }[] = [
   {
-    periodo: "Q2 · Abril - junio",
+    periodo: "Febrero - abril 2029",
     titulo: "Encendido de motores",
-    detalle: "Foco en que el 100% de la población conozca el programa y su actualización.",
+    detalle: "Foco en que el 100% de la población conozca el programa y su funcionamiento.",
   },
   {
-    periodo: "Q3 · Julio - septiembre",
+    periodo: "Mayo - julio 2029",
     titulo: "Aceleración a máxima potencia",
     detalle: "Inicio de la acumulación de puntos Órbita.",
   },
   {
-    periodo: "Q4 · Octubre - diciembre",
-    titulo: "Primera órbita completa 2026",
+    periodo: "Agosto - octubre 2029",
+    titulo: "Primera órbita completa",
     detalle:
-      "Primer reporte semestral (diciembre), revisión de ranking y canje por premios en la Tienda la organización.",
+      "Primer reporte del período (octubre), revisión de ranking y canje por premios en la tienda.",
   },
 ];
 

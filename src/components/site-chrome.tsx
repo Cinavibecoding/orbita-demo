@@ -60,7 +60,7 @@ export function SiteHeader({ page, setPage }: { page: Page; setPage: (p: Page) =
               onClick={() => setPage("bitacora")}
             >
               <WalletCards />
-              {fmt(availablePoints)} PO
+              {fmt(availablePoints)} MP
             </Button>
             <button
               onClick={() => setOpen((v) => !v)}

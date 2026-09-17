@@ -93,14 +93,14 @@ export function HomePage({
             <div className="flex items-start justify-between">
               <div>
                 <p className="text-sm font-bold text-primary-foreground/70">Mi saldo disponible</p>
-                <p className="mt-1 text-5xl font-extrabold">{fmt(availablePoints)} PO</p>
+                <p className="mt-1 text-5xl font-extrabold">{fmt(availablePoints)} MP</p>
               </div>
               <span className="rounded-full bg-gold px-3 py-1 text-sm font-extrabold text-navy">
                 N3
               </span>
             </div>
             <p className="mt-8 text-sm font-bold text-primary-foreground/70">
-              Avance sobre el tope semestral ({fmt(TOTAL_MAX)} PO)
+              Avance sobre el tope semestral ({fmt(TOTAL_MAX)} MP)
             </p>
             <Progress value={progress} className="mt-3 bg-primary-foreground/20" />
             <div className="mt-8 grid grid-cols-3 gap-3">
@@ -130,7 +130,7 @@ export function HomePage({
         </p>
         <div className="mt-10 grid gap-4 sm:grid-cols-3">
           {[
-            [fmt(TOTAL_MAX), "PO máximos por semestre"],
+            [fmt(TOTAL_MAX), "MP máximos por semestre"],
             ["5", "dimensiones"],
             [String(TOTAL_ACTIONS), "acciones referenciales"],
           ].map(([v, l]) => (
@@ -171,7 +171,7 @@ export function HomePage({
                     </h3>
                     <p className="mt-2 text-sm leading-6 text-muted-foreground">{d.short}</p>
                     <p className="mt-6 text-sm font-extrabold text-ocean">
-                      {fmt(d.max)} PO · {d.weight}%
+                      {fmt(d.max)} MP · {d.weight}%
                     </p>
                   </CardContent>
                 </Card>

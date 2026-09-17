@@ -31,7 +31,7 @@ export function RankingPage() {
                   <p className="text-xs text-muted-foreground">Explorador Órbita</p>
                 </div>
                 <span className="rounded-full bg-cyan/20 px-3 py-1 text-sm font-extrabold text-ocean">
-                  {fmt(r.points)} PO
+                  {fmt(r.points)} MP
                 </span>
               </div>
             ))}
@@ -48,7 +48,7 @@ export function RankingPage() {
           <div className="mt-8 rounded-2xl bg-primary-foreground/10 p-5">
             <div className="flex justify-between text-sm">
               <span>Diferencia al Top 10</span>
-              <b>420 PO</b>
+              <b>42 MP</b>
             </div>
             <Progress value={82} className="mt-3 bg-primary-foreground/20" />
           </div>

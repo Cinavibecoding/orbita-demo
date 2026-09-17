@@ -103,7 +103,7 @@ export function AccionesPage({
                 </div>
                 <div>
                   <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-muted-foreground">
-                    Dimensión {d.key} · tope {fmt(d.max)} PO por semestre
+                    Dimensión {d.key} · tope {fmt(d.max)} MP por semestre
                   </p>
                   <h2 className="text-2xl font-extrabold">
                     {d.name}

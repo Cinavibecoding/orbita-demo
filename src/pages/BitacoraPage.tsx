@@ -62,7 +62,7 @@ export function BitacoraPage() {
             </div>
           </div>
           <p className="mt-8 text-sm font-bold text-primary-foreground/60">Saldo disponible</p>
-          <p className="text-5xl font-extrabold">{fmt(availablePoints)} PO</p>
+          <p className="text-5xl font-extrabold">{fmt(availablePoints)} MP</p>
           <div className="mt-6 grid grid-cols-2 gap-3 text-sm">
             <div className="rounded-2xl bg-primary-foreground/10 p-4">
               <p className="text-primary-foreground/60">Aprobado</p>
@@ -100,7 +100,7 @@ export function BitacoraPage() {
                       {d.key} · {d.name}
                     </span>
                     <span className="text-muted-foreground">
-                      {fmt(value)} / {fmt(d.max)} PO
+                      {fmt(value)} / {fmt(d.max)} MP
                     </span>
                   </div>
                   <Progress value={Math.min(100, (value / d.max) * 100)} className="mt-2 h-2.5" />
